@@ -1,0 +1,51 @@
+
+
+body{
+    margin: 0;
+}
+nav{
+    background-color: #213C51;
+    margin: 0;
+    text-align: center;
+    grid-row: 2;
+    
+}
+
+.enlaces{
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.enlaces:hover{
+    color: red;
+    transform: translateY(-2px);
+}
+
+.logo{
+    max-width: 64px;
+    
+}
+
+ul{
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+    grid-template-columns: 0.15fr 0.15fr 0.15fr 0.15fr 0.15fr 0.15fr;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+.magenes{
+    gap: 100px;
+}
+
+.candidatos{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 100px;
+}

@@ -1,0 +1,122 @@
+
+
+body{
+    margin: 0;
+}
+nav{
+    background-color: #213C51;
+    margin: 0;
+    text-align: center;
+    grid-row: 2;
+    
+}
+
+.enlaces{
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.enlaces:hover{
+    color: red;
+    transform: translateY(-2px);
+}
+
+.enlaces:active{
+    opacity: 80%;
+    color: white;
+}
+
+.logo{
+    max-width: 64px;
+    
+}
+
+ul{
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+    grid-template-columns: 0.15fr 0.15fr 0.15fr 0.15fr 0.15fr 0.15fr;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+.main-container{
+    margin-top: 5%;
+    box-shadow: 2px 1px 5px 1px #0079FF;
+    border: 1px solid #0079FF;
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 36%;
+    
+}
+
+.text-container{
+    margin-top: 17%;
+    margin-left: 12.5%;
+    width: 75%;
+    
+    justify-content: center;
+}
+
+h1{
+    margin-bottom: 100px;
+    margin-top: 0px;
+}
+
+input{
+    width: 300px;
+    height: 25px;
+    border-radius: 7px;
+    border: 2px solid green;
+    display: block;
+}
+
+.cedula-container, .contraseña-container{
+    width: 68.5%;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 8.5%;
+    text-align: start;
+}
+
+.buttons{
+    margin-top: 70px;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
+
+.send, .reset{
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.send:hover, .reset:hover{
+    transform: translateY(-5px);
+    
+}
+
+.send:active, .reset:active{
+    color: white;
+    opacity: 80%;
+}
+
+.send{
+    background-color: #0079FF;
+
+}
+
+.reset{
+    background-color: #FF1E1E;
+}
