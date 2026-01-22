@@ -1,5 +1,4 @@
 
-
 body{
     margin: 0;
 }
@@ -8,7 +7,9 @@ nav{
     margin: 0;
     text-align: center;
     grid-row: 2;
-    
+    padding: 0.02px;
+    text-align: center;
+    grid-row: 2;
 }
 
 .enlaces{
@@ -39,6 +40,8 @@ ul{
     place-items: center;
     margin: 0;
 }
+
+
 .magenes{
     gap: 100px;
 }
