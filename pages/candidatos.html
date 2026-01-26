@@ -1,42 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/candidatos.css">
     <title>Candidatos</title>
-
 </head>
 <body>
+
     <nav>
         <ul>
             <img class="logo" src="/images/escudo.png">
-            <li><a class="enlaces" href="http://localhost:5500/index.html">Inicio</a></li>
-            <li><a class="enlaces" href="http://localhost:5500/pages/candidatos.html">Candidatos </a></li>
-            <li><a class="enlaces">Fechas</a></li>
-            <li><a class="enlaces">Votar</a></li>
-            <li><a class="enlaces" href="http://localhost:5500/pages/registro.html">Registro</a></li>
+            <li><a class="enlaces" href="/index.html">Inicio</a></li>
+            <li><a class="enlaces" href="/pages/candidatos.html">Candidatos</a></li>
+            <li><a class="enlaces" href="/pages/registro.html">Registro</a></li>
         </ul>
     </nav>
 
-    <h1>Candidatos presidenciales</h1>
+    <h1>Candidatos presidenciales 2026–2030</h1>
 
-    <div class="imagenes">
-        <a class="nombre" href="#anelardo-epriella">Abelardo espriella <img class="candidatos" src="/images/Perfil abelardo de la espriella.jpg"></a>
+    <div class="contenedor-candidatos">
 
-        <a class="nombre" href="#carlos-caicedo">Carlos caicedo <img class="candidatos" src="/images/foto-mi_historia_carlos_caicedo.png"></a>
-        
-        <a class="nombre" href="#daniel-palacios">Daniel Palacios <img class="candidatos" src="/images/daniel-palacios.jpg"></a>
-        
-        <a class="nombre" href="#felipe-cordoba">Felipe Cordoba <img class="candidatos" src="/images/felipe-cordoba.jpeg"></a>
-        
-        <a class="nombre" href="#sondra-macollins">Sondra Macollins <img class="candidatos" src="/images/Sondra-Macollins.jpg"></a>
-        
-        <a class="nombre" href="leonardo-huerta">Lenoardo Huerta <img class="candidatos" src="/images/LEONARDO-HUMBERTO-HUERTA-GUTIERREZ.jpg"></a>
-        
-        <a class="nombre" href="#claudia-lopez">Claudia López <img class="candidatos" src="/images/claudia-lopez.jpg"></a>
-        
-        
+        <div class="card">
+            <a href="https://en.wikipedia.org/wiki/Abelardo_de_la_Espriella" target="_blank">
+                <img src="/images/Perfil abelardo de la espriella.jpg" alt="Abelardo de la Espriella">
+            </a>
+            <h3>Abelardo de la Espriella</h3>
+            <button onclick="votar('Abelardo de la Espriella')">Votar</button>
+        </div>
+
+        <div class="card">
+            <a href="https://es.wikipedia.org/wiki/Carlos_Caicedo" target="_blank">
+                <img src="/images/foto-mi_historia_carlos_caicedo.png" alt="Carlos Caicedo">
+            </a>
+            <h3>Carlos Caicedo</h3>
+            <button onclick="votar('Carlos Caicedo')">Votar</button>
+        </div>
+
+        <div class="card">
+            <a href="https://es.wikipedia.org/wiki/Daniel_Palacios" target="_blank">
+                <img src="/images/daniel-palacios.jpg" alt="Daniel Palacios">
+            </a>
+            <h3>Daniel Palacios</h3>
+            <button onclick="votar('Daniel Palacios')">Votar</button>
+        </div>
+
+        <div class="card">
+            <a href="https://es.wikipedia.org/wiki/Felipe_C%C3%B3rdoba" target="_blank">
+                <img src="/images/felipe-cordoba.jpeg" alt="Felipe Córdoba">
+            </a>
+            <h3>Felipe Córdoba</h3>
+            <button onclick="votar('Felipe Córdoba')">Votar</button>
+        </div>
+
+        <div class="card">
+            <a href="https://es.wikipedia.org/wiki/Sondra_Macollins" target="_blank">
+                <img src="/images/Sondra-Macollins.jpg" alt="Sondra Macollins">
+            </a>
+            <h3>Sondra Macollins</h3>
+            <button onclick="votar('Sondra Macollins')">Votar</button>
+        </div>
+
+        <div class="card">
+            <a href="https://es.wikipedia.org/wiki/Leonardo_Humberto_Huerta" target="_blank">
+                <img src="/images/LEONARDO-HUMBERTO-HUERTA-GUTIERREZ.jpg" alt="Leonardo Huerta">
+            </a>
+            <h3>Leonardo Huerta</h3>
+            <button onclick="votar('Leonardo Huerta')">Votar</button>
+        </div>
+
     </div>
+
+    <script>
+        function votar(nombre) {
+            alert("Voto registrado para: " + nombre);
+        }
+    </script>
+
 </body>
 </html>

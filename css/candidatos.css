@@ -6,15 +6,14 @@ nav{
     background-color: #213C51;
     margin: 0;
     text-align: center;
-    padding: 0.02px;
-    text-align: center;
+    padding: 0;
 }
 
 .enlaces{
     text-decoration: none;
     color: white;
     transition: color 0.2s ease, transform 0.2s ease;
-    display: inline-block;
+    
     font-size: 18px;
 }
 
@@ -32,39 +31,58 @@ ul{
     font-size: 17px;
     text-decoration: none;
     list-style: none;
-    grid-template-columns: 0.15fr 0.15fr 0.15fr 0.15fr 0.15fr 0.15fr;
+    grid-template-columns: 0.20fr 0.20fr 0.20fr 0.20fr ;
     display: grid;
     place-items: center;
     margin: 0;
-}
-
-.imagenes{
-    width: 80%;
-    margin: 5% 10%;
-    place-items: center;
-    grid-column: 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
-    border: 1px solid;
 }
 
 h1{
     text-align: center;
 }
 
-.nombre{
-    color: black;
-    font-style: none;
-    text-decoration: none;
+.contenedor-candidatos {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px;
+    justify-items: center;
 }
 
-.candidatos{
-    width: 100%;
-    height: 100%;
-    max-width: 200px;
-    max-height: 200px;
-    min-height: 178px;
-    
+
+.card {
+    background: white;
+    width: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}   

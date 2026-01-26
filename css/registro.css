@@ -6,28 +6,20 @@ nav{
     background-color: #213C51;
     margin: 0;
     text-align: center;
-    grid-row: 2;
-    padding: 0.02px;
-    text-align: center;
-    grid-row: 2;
+    padding: 0;
 }
 
 .enlaces{
     text-decoration: none;
     color: white;
     transition: color 0.2s ease, transform 0.2s ease;
-    display: inline-block;
+    
     font-size: 18px;
 }
 
 .enlaces:hover{
     color: red;
     transform: translateY(-2px);
-}
-
-.enlaces:active{
-    opacity: 80%;
-    color: white;
 }
 
 .logo{
@@ -39,13 +31,28 @@ ul{
     font-size: 17px;
     text-decoration: none;
     list-style: none;
-    grid-template-columns: 0.15fr 0.15fr 0.15fr 0.15fr 0.15fr 0.15fr;
-    align-items: center;
+    grid-template-columns: 0.20fr 0.20fr 0.20fr 0.20fr ;
     display: grid;
     place-items: center;
     margin: 0;
 }
 
+
+
+.text-body{
+    width: 94%;
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.text-title{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.text-sentence{
+    font-size: 18px;
+}
 .main-container{
     margin-top: 5%;
     box-shadow: 2px 1px 5px 1px #0079FF;
