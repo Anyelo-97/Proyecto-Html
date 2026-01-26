@@ -13,7 +13,6 @@ nav{
     text-decoration: none;
     color: white;
     transition: color 0.2s ease, transform 0.2s ease;
-    
     font-size: 18px;
 }
 
@@ -24,20 +23,24 @@ nav{
 
 .logo{
     max-width: 64px;
-    
 }
 
 ul{
     font-size: 17px;
     text-decoration: none;
     list-style: none;
-    grid-template-columns: 0.20fr 0.20fr 0.20fr 0.20fr ;
+    grid-template-columns: repeat(4,0.20fr)  ;
     display: grid;
     place-items: center;
     margin: 0;
 }
 
 
+.vote{
+width: 128px;
+height: 128px;
+margin-left: 46%;
+}
 
 .text-body{
     width: 94%;
@@ -56,13 +59,20 @@ ul{
 
 footer{
     background-color: rgb(241, 159, 35);
-    height: 100px;
+    height: auto;
     margin: 0;
     align-content: center;
-    padding: 30px;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-content{
+    margin-top: 10px;
+    margin-left: 30%;
+    width: 40%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-content: center;
+    align-content: flex-center;
     text-align: center;
     align-items: center;
 }

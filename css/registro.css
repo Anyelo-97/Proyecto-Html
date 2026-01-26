@@ -87,16 +87,18 @@ input{
     width: 300px;
     height: 25px;
     border-radius: 7px;
-    border: 2px solid green;
+    border: 2px solid black;
     display: block;
 }
 
 .cedula-container, .contraseña-container{
-    width: 68.5%;
+    width: 100%;
+    appearance: none;
     margin-top: 30px;
     font-size: 18px;
     margin-left: 8.5%;
     text-align: start;
+    list-style: none;
 }
 
 .buttons{
@@ -112,6 +114,7 @@ input{
     width: 100px;
     height: 40px;
     transition: color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
 }
 
 .send:hover, .reset:hover{
@@ -135,4 +138,29 @@ input{
 
 .title{
     margin-top: 30px;
+}
+
+footer{
+    background-color: rgb(241, 159, 35);
+    height: auto;
+    bottom: 0;
+    align-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-content{
+    margin-top: 10px;
+    margin-left: 30%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(4, 0.1fr);
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.img-footer{
+    max-width: 96px;
 }
