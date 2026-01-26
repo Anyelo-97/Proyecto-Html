@@ -154,8 +154,8 @@ footer{
     margin-left: 30%;
     width: 40%;
     display: grid;
-    grid-template-columns: repeat(4, 0.1fr);
-    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: flex-center;
     text-align: center;
     align-items: center;
 }
